@@ -1,0 +1,200 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$icon-chat-bg-name: 'icon__chat--bg';
+$icon-chat-bg-x: 171px;
+$icon-chat-bg-y: 0px;
+$icon-chat-bg-offset-x: -171px;
+$icon-chat-bg-offset-y: 0px;
+$icon-chat-bg-width: 13px;
+$icon-chat-bg-height: 12px;
+$icon-chat-bg-total-width: 184px;
+$icon-chat-bg-total-height: 168px;
+$icon-chat-bg-image: '../img/sprite.png';
+$icon-chat-bg: (171px, 0px, -171px, 0px, 13px, 12px, 184px, 168px, '../img/sprite.png', 'icon__chat--bg', );
+$icon-chat-hover-name: 'icon__chat--hover';
+$icon-chat-hover-x: 145px;
+$icon-chat-hover-y: 24px;
+$icon-chat-hover-offset-x: -145px;
+$icon-chat-hover-offset-y: -24px;
+$icon-chat-hover-width: 13px;
+$icon-chat-hover-height: 12px;
+$icon-chat-hover-total-width: 184px;
+$icon-chat-hover-total-height: 168px;
+$icon-chat-hover-image: '../img/sprite.png';
+$icon-chat-hover: (145px, 24px, -145px, -24px, 13px, 12px, 184px, 168px, '../img/sprite.png', 'icon__chat--hover', );
+$icon-chat-name: 'icon__chat';
+$icon-chat-x: 158px;
+$icon-chat-y: 12px;
+$icon-chat-offset-x: -158px;
+$icon-chat-offset-y: -12px;
+$icon-chat-width: 13px;
+$icon-chat-height: 12px;
+$icon-chat-total-width: 184px;
+$icon-chat-total-height: 168px;
+$icon-chat-image: '../img/sprite.png';
+$icon-chat: (158px, 12px, -158px, -12px, 13px, 12px, 184px, 168px, '../img/sprite.png', 'icon__chat', );
+$icon-close-white-name: 'icon__close--white';
+$icon-close-white-x: 97px;
+$icon-close-white-y: 58px;
+$icon-close-white-offset-x: -97px;
+$icon-close-white-offset-y: -58px;
+$icon-close-white-width: 16px;
+$icon-close-white-height: 16px;
+$icon-close-white-total-width: 184px;
+$icon-close-white-total-height: 168px;
+$icon-close-white-image: '../img/sprite.png';
+$icon-close-white: (97px, 58px, -97px, -58px, 16px, 16px, 184px, 168px, '../img/sprite.png', 'icon__close--white', );
+$icon-loop-name: 'icon__loop';
+$icon-loop-x: 65px;
+$icon-loop-y: 91px;
+$icon-loop-offset-x: -65px;
+$icon-loop-offset-y: -91px;
+$icon-loop-width: 17px;
+$icon-loop-height: 17px;
+$icon-loop-total-width: 184px;
+$icon-loop-total-height: 168px;
+$icon-loop-image: '../img/sprite.png';
+$icon-loop: (65px, 91px, -65px, -91px, 17px, 17px, 184px, 168px, '../img/sprite.png', 'icon__loop', );
+$icon-mail-name: 'icon__mail';
+$icon-mail-x: 130px;
+$icon-mail-y: 36px;
+$icon-mail-offset-x: -130px;
+$icon-mail-offset-y: -36px;
+$icon-mail-width: 15px;
+$icon-mail-height: 10px;
+$icon-mail-total-width: 184px;
+$icon-mail-total-height: 168px;
+$icon-mail-image: '../img/sprite.png';
+$icon-mail: (130px, 36px, -130px, -36px, 15px, 10px, 184px, 168px, '../img/sprite.png', 'icon__mail', );
+$icon-phone-name: 'icon__phone';
+$icon-phone-x: 113px;
+$icon-phone-y: 46px;
+$icon-phone-offset-x: -113px;
+$icon-phone-offset-y: -46px;
+$icon-phone-width: 17px;
+$icon-phone-height: 12px;
+$icon-phone-total-width: 184px;
+$icon-phone-total-height: 168px;
+$icon-phone-image: '../img/sprite.png';
+$icon-phone: (113px, 46px, -113px, -46px, 17px, 12px, 184px, 168px, '../img/sprite.png', 'icon__phone', );
+$icon-triangle-white-bg-name: 'icon__triangle--white--bg';
+$icon-triangle-white-bg-x: 82px;
+$icon-triangle-white-bg-y: 74px;
+$icon-triangle-white-bg-offset-x: -82px;
+$icon-triangle-white-bg-offset-y: -74px;
+$icon-triangle-white-bg-width: 15px;
+$icon-triangle-white-bg-height: 17px;
+$icon-triangle-white-bg-total-width: 184px;
+$icon-triangle-white-bg-total-height: 168px;
+$icon-triangle-white-bg-image: '../img/sprite.png';
+$icon-triangle-white-bg: (82px, 74px, -82px, -74px, 15px, 17px, 184px, 168px, '../img/sprite.png', 'icon__triangle--white--bg', );
+$icon-triangle-white-name: 'icon__triangle--white';
+$icon-triangle-white-x: 24px;
+$icon-triangle-white-y: 122px;
+$icon-triangle-white-offset-x: -24px;
+$icon-triangle-white-offset-y: -122px;
+$icon-triangle-white-width: 17px;
+$icon-triangle-white-height: 22px;
+$icon-triangle-white-total-width: 184px;
+$icon-triangle-white-total-height: 168px;
+$icon-triangle-white-image: '../img/sprite.png';
+$icon-triangle-white: (24px, 122px, -24px, -122px, 17px, 22px, 184px, 168px, '../img/sprite.png', 'icon__triangle--white', );
+$icon-vk-name: 'icon__vk';
+$icon-vk-x: 41px;
+$icon-vk-y: 108px;
+$icon-vk-offset-x: -41px;
+$icon-vk-offset-y: -108px;
+$icon-vk-width: 24px;
+$icon-vk-height: 14px;
+$icon-vk-total-width: 184px;
+$icon-vk-total-height: 168px;
+$icon-vk-image: '../img/sprite.png';
+$icon-vk: (41px, 108px, -41px, -108px, 24px, 14px, 184px, 168px, '../img/sprite.png', 'icon__vk', );
+$icon-youtube-name: 'icon__youtube';
+$icon-youtube-x: 0px;
+$icon-youtube-y: 144px;
+$icon-youtube-offset-x: 0px;
+$icon-youtube-offset-y: -144px;
+$icon-youtube-width: 24px;
+$icon-youtube-height: 24px;
+$icon-youtube-total-width: 184px;
+$icon-youtube-total-height: 168px;
+$icon-youtube-image: '../img/sprite.png';
+$icon-youtube: (0px, 144px, 0px, -144px, 24px, 24px, 184px, 168px, '../img/sprite.png', 'icon__youtube', );
+$spritesheet-width: 184px;
+$spritesheet-height: 168px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($icon-chat-bg, $icon-chat-hover, $icon-chat, $icon-close-white, $icon-loop, $icon-mail, $icon-phone, $icon-triangle-white-bg, $icon-triangle-white, $icon-vk, $icon-youtube, );
+$spritesheet: (184px, 168px, '../img/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

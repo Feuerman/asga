@@ -1,0 +1,190 @@
+include templates/head.jade
+body
+	.page-wrapper
+		include templates/header.jade
+		section.page-content
+			.container
+				aside.left-sidebar
+					.left-menu
+						.left-menu__group
+							a.title(href="#") О компании
+							ul
+								li
+									a(href="#") Цели и задачи
+								li
+									a(href="#") История компании
+								li
+									a(href="#") Завод
+								li
+									a(href="#") Сертификаты
+								li
+									a(href="#") Карьера
+								li
+									a(href="#") Партнеры и клиенты
+								li
+									a(href="#") Наши работы
+						.left-menu__group
+							a.title(href="#") Корпоративным клиентам
+						.left-menu__group
+							a.title(href="#") Социальная ответственность
+						.left-menu__group
+							a.title.active(href="#") Пресс-центр
+							ul
+								li
+									a(href="#") Новости
+								li
+									a(href="#") Видеоархив
+								li
+									a(href="#") Вопрос-ответ
+					.search-form
+						form
+							input(type="text" placeholder="Найти")
+							button(type="submit")
+								img.svg.svg--search(src="img/search.svg", alt="")
+					.left-sidebar__product
+						.products-slider__item
+							.image
+								img(src="img/product -1.jpg", alt="")
+							.desc
+								.desc__name Газовая колонка NEVA-4511
+								.price
+									span.price__old 9500
+									span 9220 руб.
+							a.link.button(href="#") Подробнее
+						a.link(href="#") Открыть каталог
+				section.page-content__main
+					section.breadcrumbs
+						ul
+							li
+								a(href="#") Главная
+							li
+								a(href="#") О компании
+							li
+								span Пресс-центр
+					h1.page-title Пресс-центр
+					section.preview-block
+						.preview-block__title Новости
+						.news-filter
+							.news-filter__category
+								a.active(href="#") Все
+								a(href="#") О компании
+								a(href="#") Проекты
+								a(href="#") Услуги
+								a(href="#") Продукция
+							.news-filter__years
+								a.active(href="#") Все
+								a(href="#") 2017
+								a(href="#") 2016
+								a(href="#") 2015
+								a(href="#") 2014
+						.news-slider.owl-carousel
+							a.news-slider__item(style="background-image: url('img/news-1.jpg');" href="#")
+								.news-slider__item-content
+									.title Выставка Aquatherm 2017
+									p BaltGaz совместно с компанией Honeywell выставке Aquatherm 2017 представил котел нового поколения BaltGaz Turbo. Котёл разработан в инженерно-техническом центре BaltGaz и оснащен современной системой управления от компании Honeywell.
+									.date 27 февраля 2017г.
+							a.news-slider__item(style="background-image: url('img/news-2.jpg');" href="#")
+								.news-slider__item-content
+									.title Новые модели проточных газовых водонагревателей NEVA
+									p В декабре 2016 года BaltGaz Групп расширяет линейку газовых проточных водонагревателей NEVA. Выпущены новые модели газовых проточных водонагревателей NEVA 4508 и NEVA 4510, NEVA 9 и NEVA 11. Данные модели разработаны в инженерно-техническом центре BaltGaz Групп. 
+									.date 26 декабря 2017г.
+							a.news-slider__item(style="background-image: url('img/news-3.jpg');" href="#")
+								.news-slider__item-content
+									.title Замена котла в газовой отопительной котельной Ленинградской области
+									p Заказчиком данных работ выступила Администрация Агалатовского селького поселения. Котельная предназначена для отопления жилого массива и школы в поселке Вартемяги.
+									.date 24 августа 2016г.
+						.preview-block__link
+							a(href="#") Все новости	
+					section.preview-block
+						.preview-block__title Видеоархив
+						.preview-block__tizers
+							a.item.item--video(href="#")
+								.item__image(style="background-image: url('img/video-1.jpg');")
+									button.item__play(data-src="")
+										i.icon.icon__triangle--white--bg
+								.item__desc
+									.item__desc-title Выставка Aquatherm 2017
+									.item__desc-date 27 февраля 2017г.
+							a.item.item--video(href="#")
+								.item__image(style="background-image: url('img/video-2.jpg');")
+									button.item__play(data-src="")
+										i.icon.icon__triangle--white--bg
+								.item__desc
+									.item__desc-title Новые модели проточных газовых водонагревателей NEVA
+									.item__desc-date 26 декабря 2017г.
+							a.item.item--video(href="#")
+								.item__image(style="background-image: url('img/video-3.jpg');")
+									button.item__play(data-src="")
+										i.icon.icon__triangle--white--bg
+								.item__desc
+									.item__desc-title Замена котла в газовой отопительной котельной Ленинградской области
+									.item__desc-date 24 августа 2016г.
+						.preview-block__link
+							a(href="#") Все видео
+					section.preview-block
+						.preview-block__title Вопрос-ответ
+						.questions
+							.questions__item
+								.title
+									span Как подобрать отопление для загородного дома?
+									button
+										i.icon.icon__chat--bg
+										span Ответ
+								.text
+									p Счётчик газа служит для измерения прошедшего через него количества природного либо сжиженного газа.
+									p Любой человек, зная, что за израсходованный объем газа нужно будет платить, автоматически начнёт искать способы его экономить. Для замера расхода природного газа потребители обычно используют четыре вида газовых счётчиков:
+									ul
+										li мембранные (диафрагменные)
+										li ротационные
+										li турбинные
+										li вихревой расходомер
+									p В быту обычно используются мембранные счетчики газа.
+							.questions__item
+								.title
+									span Для чего нужен счётчик газа?
+									button
+										i.icon.icon__chat--bg
+										span Ответ
+								.text
+									p Счётчик газа служит для измерения прошедшего через него количества природного либо сжиженного газа.
+									p Любой человек, зная, что за израсходованный объем газа нужно будет платить, автоматически начнёт искать способы его экономить. Для замера расхода природного газа потребители обычно используют четыре вида газовых счётчиков:
+									ul
+										li мембранные (диафрагменные)
+										li ротационные
+										li турбинные
+										li вихревой расходомер
+									p В быту обычно используются мембранные счетчики газа.
+							.questions__item
+								.title
+									span Какая экономия возможна после установки прибора учета газа?
+									button
+										i.icon.icon__chat--bg
+										span Ответ
+								.text
+									p Счётчик газа служит для измерения прошедшего через него количества природного либо сжиженного газа.
+									p Любой человек, зная, что за израсходованный объем газа нужно будет платить, автоматически начнёт искать способы его экономить. Для замера расхода природного газа потребители обычно используют четыре вида газовых счётчиков:
+									ul
+										li мембранные (диафрагменные)
+										li ротационные
+										li турбинные
+										li вихревой расходомер
+									p В быту обычно используются мембранные счетчики газа.
+							.questions__item
+								.title
+									span Как и где размещаются приборы учета газа?
+									button
+										i.icon.icon__chat--bg
+										span Ответ
+								.text
+									p Счётчик газа служит для измерения прошедшего через него количества природного либо сжиженного газа.
+									p Любой человек, зная, что за израсходованный объем газа нужно будет платить, автоматически начнёт искать способы его экономить. Для замера расхода природного газа потребители обычно используют четыре вида газовых счётчиков:
+									ul
+										li мембранные (диафрагменные)
+										li ротационные
+										li турбинные
+										li вихревой расходомер
+									p В быту обычно используются мембранные счетчики газа.
+						.preview-block__link
+							a(href="#") Все вопросы
+		include templates/footer.jade
+include templates/modal/index.jade

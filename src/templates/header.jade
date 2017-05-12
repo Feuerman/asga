@@ -1,0 +1,23 @@
+header.header(class=(mainPage) ? '' : 'header--inner')
+    button.menu-btn(data-fancybox data-src="#menu-modal")
+        span
+    .header-logo
+        if mainPage
+            img(src="img/logo.png", alt="")
+        else
+            img(src="img/logo--white.png", alt="")
+    ul.top-menu
+        li.top-menu__item
+            a.top-menu__link(href="#") О компании
+        li.top-menu__item
+            a.top-menu__link(href="#") Интернет-магазин
+        li.top-menu__item
+            a.top-menu__link(href="#") Сервисы
+        li.top-menu__item
+            a.top-menu__link(href="#") Социальная сеть
+        li.top-menu__item
+            a.top-menu__link(href="#") Где купить?
+        li.top-menu__item
+            a.top-menu__link(href="#") Контакты
+    button.header__search
+        img.svg.svg--search(src="img/search.svg", alt="")

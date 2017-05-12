@@ -1,0 +1,237 @@
+- var mainPage = true
+include templates/head.jade
+body
+	.page-wrapper
+		include templates/header.jade
+		section.top-banner
+			.wide-slider.owl-carousel
+				.wide-slider__item(style="background-image: url('img/slider-1.jpg');" data-theme="dark")
+					.text
+						p Мы верим, что качество побеждает!1
+						a.link.button(href="#") Далее
+				.wide-slider__item(style="background-image: url('img/slider-1.jpg');" data-theme="light")
+					.text
+						p Мы верим, что качество побеждает!2
+						a.link.button(href="#") Далее
+		section.advantages
+			.container
+				.advantages-slider.owl-carousel
+					.advantages-slider__item
+						.advantages__item
+							.image
+								img.svg(src="img/advantages-1.svg", alt="")
+							.desc
+								p
+									b С 1995 года&nbsp;
+									| делаем качественное  оборудование
+						.advantages__item
+							.image
+								img.svg(src="img/advantages-2.svg", alt="")
+							.desc
+								p
+									b Наша продукция&nbsp;
+									| есть в 1500 населенных пунктах
+						.advantages__item
+							.image
+								img.svg(src="img/advantages-3.svg", alt="")
+							.desc
+								p
+									b Широкий выбор&nbsp;
+									| газового оборудования
+						.advantages__item
+							.image
+								img.svg(src="img/advantages-4.svg", alt="")
+							.desc
+								p
+									b Проводим&nbsp;
+									| анализ воды
+					.advantages-slider__item
+						.advantages__item
+							.image
+								img.svg(src="img/advantages-5.svg", alt="")
+							.desc
+								p
+									b Завод&nbsp;
+									| АЗГА
+						.advantages__item
+							.image
+								img.svg(src="img/advantages-6.svg", alt="")
+							.desc
+								p
+									b Мы сделали&nbsp;
+									| более 50 проектов по газификации
+						.advantages__item
+							.image
+								img.svg(src="img/advantages-7.svg", alt="")
+							.desc
+								p
+									b Мы представляем&nbsp;
+									| 7 видов услуг по газообеспечению
+						.advantages__item
+							.image
+								img.svg(src="img/advantages-8.svg", alt="")
+							.desc
+								p
+									b Объединяем&nbsp;
+									| монтажников страны для достижения целей
+					.advantages-slider__item
+						.advantages__item
+							.image
+								img.svg(src="img/advantages-9.svg", alt="")
+							.desc
+								p
+									b Эксклюзивные&nbsp;
+									| дистрибьюторы
+						.advantages__item
+							.image
+								img.svg(src="img/advantages-10.svg", alt="")
+							.desc
+								p
+									b Более 400&nbsp;
+									| сервисных центров в РФ
+						.advantages__item
+							.image
+								img.svg(src="img/advantages-11.svg", alt="")
+							.desc
+								p
+									b Мы проектируем&nbsp;
+									| объекты любой  сложности
+						.advantages__item
+							.image
+								img.svg(src="img/advantages-12.svg", alt="")
+							.desc
+								p
+									b Пресс центр&nbsp;
+									| компании
+		section.news
+			.container
+				.news__title Новости
+				.news-slider.owl-carousel
+					a.news-slider__item(style="background-image: url('img/news-1.jpg');" href="#")
+						.news-slider__item-content
+							.title Выставка Aquatherm 2017
+							p BaltGaz совместно с компанией Honeywell выставке Aquatherm 2017 представил котел нового поколения BaltGaz Turbo. Котёл разработан в инженерно-техническом центре BaltGaz и оснащен современной системой управления от компании Honeywell.
+							.date 27 февраля 2017г.
+					a.news-slider__item(style="background-image: url('img/news-2.jpg');" href="#")
+						.news-slider__item-content
+							.title Новые модели проточных газовых водонагревателей NEVA
+							p В декабре 2016 года BaltGaz Групп расширяет линейку газовых проточных водонагревателей NEVA. Выпущены новые модели газовых проточных водонагревателей NEVA 4508 и NEVA 4510, NEVA 9 и NEVA 11. Данные модели разработаны в инженерно-техническом центре BaltGaz Групп. 
+							.date 26 декабря 2017г.
+					a.news-slider__item(style="background-image: url('img/news-3.jpg');" href="#")
+						.news-slider__item-content
+							.title Замена котла в газовой отопительной котельной Ленинградской области
+							p Заказчиком данных работ выступила Администрация Агалатовского селького поселения. Котельная предназначена для отопления жилого массива и школы в поселке Вартемяги.
+							.date 24 августа 2016г.
+				.news__link
+					a(href="#") Архив новостей		
+		include templates/footer.jade
+.modal
+	div#menu-modal.menu-modal
+		.menu-modal__search
+			form
+				input(type="text" placeholder="Поиск по сайту")
+				button(type="submit")
+					img.svg.svg--search(src="img/search.svg", alt="")
+		.menu-modal__links
+			.col
+				.col-group
+					a.col-group__title(href="#") О компании
+					ul
+						li
+							a(href="#") Цели и задачи
+						li
+							a(href="#") История
+						li
+							a(href="#") Завод
+						li
+							a(href="#") Сертификаты
+						li
+							a(href="#") Карьера
+						li
+							a(href="#") Партнеры и клиенты
+						li
+							a(href="#") Наши проекты
+			.col
+				.col-group
+					a.col-group__title(href="#") Пресс-центр
+					ul
+						li
+							a(href="#") Новости
+						li
+							a(href="#") Вопрос-ответ
+						li
+							a(href="#") Видео архив
+				.col-group
+					a.col-group__title(href="#") Корпоративным клиентам
+			.col
+				.col-group
+					a.col-group__title(href="#") Сервисы
+					ul
+						li
+							a(href="#") Энергоцентры и котельные
+						li
+							a(href="#") Газовые котлы и системы отопления
+						li
+							a(href="#") Аварийно-спасательная служба
+						li
+							a(href="#") Для частных домов
+						li
+							a(href="#") Промышленная газификация
+			.col
+				.col-group
+					a.col-group__title(href="#") Контакты
+					a.col-group__title(href="#") Где купить?
+				.col-group
+					a.col-group__title(href="#") Портал
+				.col-group
+					a.col-group__title(href="#") Социальная ответственность
+		.menu-modal__production
+			.title Продукция
+			.products-slider.owl-carousel
+				.products-slider__item
+					.image
+						img(src="img/product -1.jpg", alt="")
+					.desc
+						.desc__name Газовая колонка NEVA-4511
+						.price
+							span.price__old 9500
+							span 9220 руб.
+					a.link.button(href="#") Подробнее
+				.products-slider__item
+					.image
+						img(src="img/product -2.jpg", alt="")
+					.desc
+						.desc__name Газовая колонка NEVA-4511 (серебро)
+						.price
+							span.price__old 10000
+							span 9320 руб.
+					a.link.button(href="#") Подробнее
+				.products-slider__item
+					.image
+						img(src="img/product -3.jpg", alt="")
+					.desc
+						.desc__name Газовая колонка NEVA‑4513 М (серебро)
+						.price
+							span 11420 руб.
+					a.link.button(href="#") Подробнее
+				.products-slider__item
+					.image
+						img(src="img/product -4.jpg", alt="")
+					.desc
+						.desc__name Газовая колонка NEVA-4510М (серебро)
+						.price
+							span 7500 руб.
+					a.link.button(href="#") Подробнее
+				.products-slider__item
+					.image
+						img(src="img/product -5.jpg", alt="")
+					.desc
+						.desc__name Газовая колонка NEVA‑4513 М
+						.price
+							span.price__old 11950
+							span 11320 руб.
+					a.link.button(href="#") Подробнее
+			.link-all
+				a(href="#") Открыть каталог продукции
+
+
