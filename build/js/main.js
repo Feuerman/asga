@@ -1,5 +1,12 @@
-$(document).ready(function () {
+var map;
+function initMap() {
+	map = new google.maps.Map(document.getElementById('contacts-map'), {
+		center: {lat: -34.397, lng: 150.644},
+		zoom: 8
+	});
+}
 
+$(document).ready(function () {
 	var time = 5;
  
 	var $progressBar,
@@ -46,7 +53,7 @@ $(document).ready(function () {
 			}
 		},
 		news: {
-			selector: '.news-slider',
+			selector: '.js-news-slider-main',
 			width: 900,
 			params: {
 				autoHeight: false,
@@ -57,6 +64,29 @@ $(document).ready(function () {
 					},
 					'600': {
 						items: 2,						
+						margin: 5,
+						autoHeight: false
+					}
+				}
+			}		
+		},
+		newsInContent: {
+			selector: '.js-news-slider-inContent',
+			width: 992,
+			params: {
+				autoHeight: false,
+				responsive: {
+					'0': {
+						items: 1,
+						autoHeight: true
+					},
+					'600': {
+						items: 2,					
+						margin: 5,
+						autoHeight: false
+					},
+					'800': {
+						items: 3,						
 						margin: 5,
 						autoHeight: false
 					}
@@ -213,6 +243,36 @@ $(document).ready(function () {
 			text.text('Ответ');
 		}
 	});
+
+	// Toggle buttons
+	$('.js-toggle').on('click', function(e) {
+		e.preventDefault();
+
+		var target = $(this).attr('data-toggle');
+		$(this).toggleClass('active');
+		$('.' + target).toggleClass('active');
+	});
+
+	// Custom input file
+	var inputFile = $('.input-file');
+	inputFile.find('input[type="file"]').on('change', function(e) {
+			console.log(e);
+		var value = e.target.files[0].name,
+			resultBlock = $(this).siblings('.input-file__result');
+		resultBlock.text(value);
+	});
+
+	// Massonry
+	$(window).load(function(){
+		$('.strip-elements').masonry({
+			columnWidth: '.strip-elements__item',
+			itemSelector: '.strip-elements__item',
+			gutter: 12
+		});
+	});	
+
+	// Custom input
+	$('.input-select').styler();
 	
 	// Замена imgSvg на inlineSvg
 	$('img.svg').each(function(){

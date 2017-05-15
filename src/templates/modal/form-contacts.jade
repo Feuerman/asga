@@ -1,0 +1,45 @@
+.modal
+	form#form-contacts.modal-form
+		.modal-form__main
+			.modal-form__title
+				span Обратная связь
+			.modal-form__group
+				label Тема
+				.input
+					select.input-select(data-placeholder="Общие вопросы")
+						option(value="1") 1
+						option(value="2") 2
+						option(value="3") 3
+			.modal-form__group
+				label Имя
+				.input
+					input.input-text(type="text")
+			.modal-form__group
+				label E-mail
+				.input
+					input.input-text(type="text")
+			.modal-form__group
+				label Телефон
+				.input
+					input.input-text(type="text")
+			.modal-form__group
+				label Сообщение
+				.input
+					textarea.input-text
+			.modal-form__group
+				.input
+					.input-file
+						input(type="file")
+						button.input-file__btn Прикрепить файл
+						.input-file__result
+		.modal-form__footer
+			button(type="submit") Отправить заявку
+
+
+
+
+
+
+
+
+

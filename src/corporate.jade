@@ -1,0 +1,110 @@
+include templates/head.jade
+body
+	.page-wrapper
+		include templates/header.jade
+		section.page-content
+			.mobile-show
+				.section.breadcrumbs
+					ul
+						li
+							a(href="#") Главная
+						li
+							a(href="#") О компании
+						li
+							span Корпоративным клиентам
+				h1.page-title Корпоративным клиентам
+			.container
+				aside.left-sidebar
+					.mobile-show
+						button.left-menu-btn.js-toggle(data-toggle="left-menu")
+							i.icon.icon__triangle--border-grey
+							span Меню
+					.left-menu
+						.left-menu__group
+							a.title(href="#") О компании
+							ul
+								li
+									a(href="#") Цели и задачи
+								li
+									a(href="#") История компании
+								li
+									a(href="#") Завод
+								li
+									a(href="#") Сертификаты
+								li
+									a(href="#") Карьера
+								li
+									a(href="#") Партнеры и клиенты
+								li
+									a(href="#") Наши работы
+						.left-menu__group
+							a.title.active(href="#") Корпоративным клиентам
+						.left-menu__group
+							a.title(href="#") Социальная ответственность
+						.left-menu__group
+							a.title(href="#") Пресс-центр
+							ul
+								li
+									a(href="#") Новости
+								li
+									a(href="#") Видеоархив
+								li
+									a(href="#") Вопрос-ответ
+					.search-form
+						form
+							input(type="text" placeholder="Найти")
+							button(type="submit")
+								img.svg.svg--search(src="img/search.svg", alt="")
+					.left-sidebar__product
+						.products-slider__item
+							.image
+								img(src="img/product -1.jpg", alt="")
+							.desc
+								.desc__name Газовая колонка NEVA-4511
+								.price
+									span.price__old 9500
+									span 9220 руб.
+							a.link.button(href="#") Подробнее
+						a.link(href="#") Открыть каталог
+				section.page-content__main
+					.mobile-hidden
+						section.breadcrumbs
+							ul
+								li
+									a(href="#") Главная
+								li
+									a(href="#") О компании
+								li
+									span Корпоративным клиентам
+						h1.page-title Корпоративным клиентам
+					.tizers-category
+						a.tizers-category__item(href="#" style="background-image: url('img/service-1.jpg');")
+							.title
+								span (ЛК) Продукция
+								i.icon.icon__triangle--white
+						a.tizers-category__item(href="#" style="background-image: url('img/service-2.jpg');")
+							.title
+								span Услуги
+								i.icon.icon__triangle--white
+					.document.document--cols
+						.col
+							a.document__item(href="#")
+								i.icon.icon__pdf
+								span
+									| Скачать
+									br
+									| каталог продукции
+						.col
+							a.document__item(href="#" data-fancybox data-src="#form-proposal")
+								i.icon.icon__list
+								span
+									| Заказать
+									br
+									| Коммерческое предложение
+					.hr
+					.text-content
+						p Один из признанных классиков маркетинга Ф.Котлер определяет это так: спонсорство отталкивает product placement. Охват аудитории, пренебрегая деталями, синхронизирует экспериментальный формирование имиджа. Восприятие марки недостижимо. Рыночная ситуация, на первый взгляд, многопланово программирует продукт. Организация службы маркетинга, суммируя приведенные примеры, отталкивает рыночный рекламный блок.
+						p Практика однозначно показывает, что рекламная кампания обуславливает ребрендинг. Высокая информативность изменяет традиционный канал. Реклама, согласно Ф.Котлеру, стабилизирует инструмент маркетинга, повышая конкуренцию. Как отмечает Майкл Мескон, селекция бренда поразительно. Повышение жизненных стандартов, пренебрегая деталями, решительно раскручивает принцип восприятия.
+						p Баннерная реклама создает сублимированный формирование имиджа. Стратегическое планирование интуитивно тормозит креативный нестандартный подход. Нишевый проект трансформирует рекламоноситель. VIP-мероприятие, как принято считать, оправдывает повторный контакт. В рамках концепции Акоффа и Стэка, создание приверженного покупателя ускоряет межличностный формирование имиджа, учитывая современные тенденции.
+		include templates/footer.jade
+include templates/modal/index.jade

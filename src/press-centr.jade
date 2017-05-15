@@ -3,8 +3,22 @@ body
 	.page-wrapper
 		include templates/header.jade
 		section.page-content
+			.mobile-show
+				.section.breadcrumbs
+					ul
+						li
+							a(href="#") Главная
+						li
+							a(href="#") О компании
+						li
+							span Пресс-центр
+				h1.page-title Пресс-центр
 			.container
 				aside.left-sidebar
+					.mobile-show
+						button.left-menu-btn.js-toggle(data-toggle="left-menu")
+							i.icon.icon__triangle--border-grey
+							span Меню
 					.left-menu
 						.left-menu__group
 							a.title(href="#") О компании
@@ -53,31 +67,32 @@ body
 							a.link.button(href="#") Подробнее
 						a.link(href="#") Открыть каталог
 				section.page-content__main
-					section.breadcrumbs
-						ul
-							li
-								a(href="#") Главная
-							li
-								a(href="#") О компании
-							li
-								span Пресс-центр
-					h1.page-title Пресс-центр
+					.mobile-hidden
+						section.breadcrumbs
+							ul
+								li
+									a(href="#") Главная
+								li
+									a(href="#") О компании
+								li
+									span Пресс-центр
+						h1.page-title Пресс-центр
 					section.preview-block
 						.preview-block__title Новости
 						.news-filter
-							.news-filter__category
+							.news-filter__item
 								a.active(href="#") Все
 								a(href="#") О компании
 								a(href="#") Проекты
 								a(href="#") Услуги
 								a(href="#") Продукция
-							.news-filter__years
+							.news-filter__item
 								a.active(href="#") Все
 								a(href="#") 2017
 								a(href="#") 2016
 								a(href="#") 2015
 								a(href="#") 2014
-						.news-slider.owl-carousel
+						.news-slider.owl-carousel.js-news-slider-inContent
 							a.news-slider__item(style="background-image: url('img/news-1.jpg');" href="#")
 								.news-slider__item-content
 									.title Выставка Aquatherm 2017
@@ -97,7 +112,7 @@ body
 							a(href="#") Все новости	
 					section.preview-block
 						.preview-block__title Видеоархив
-						.preview-block__tizers
+						.preview-block__tizers.owl-carousel.js-news-slider-inContent
 							a.item.item--video(href="#")
 								.item__image(style="background-image: url('img/video-1.jpg');")
 									button.item__play(data-src="")

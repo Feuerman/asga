@@ -1,0 +1,142 @@
+include templates/head.jade
+body
+	.page-wrapper
+		include templates/header.jade
+		section.page-content
+			.mobile-show
+				.section.breadcrumbs
+					ul
+						li
+							a(href="#") Главная
+						li
+							a(href="#") О компании
+						li
+							span Социальная ответственность
+				h1.page-title Социальная ответственность
+			.container
+				aside.left-sidebar
+					.mobile-show
+						button.left-menu-btn.js-toggle(data-toggle="left-menu")
+							i.icon.icon__triangle--border-grey
+							span Меню
+					.left-menu
+						.left-menu__group
+							a.title(href="#") О компании
+							ul
+								li
+									a(href="#") Цели и задачи
+								li
+									a(href="#") История компании
+								li
+									a(href="#") Завод
+								li
+									a(href="#") Сертификаты
+								li
+									a(href="#") Карьера
+								li
+									a(href="#") Партнеры и клиенты
+								li
+									a(href="#") Наши работы
+						.left-menu__group
+							a.title.active(href="#") Корпоративным клиентам
+						.left-menu__group
+							a.title(href="#") Социальная ответственность
+						.left-menu__group
+							a.title(href="#") Пресс-центр
+							ul
+								li
+									a(href="#") Новости
+								li
+									a(href="#") Видеоархив
+								li
+									a(href="#") Вопрос-ответ
+					.search-form
+						form
+							input(type="text" placeholder="Найти")
+							button(type="submit")
+								img.svg.svg--search(src="img/search.svg", alt="")
+					.left-sidebar__product
+						.products-slider__item
+							.image
+								img(src="img/product -1.jpg", alt="")
+							.desc
+								.desc__name Газовая колонка NEVA-4511
+								.price
+									span.price__old 9500
+									span 9220 руб.
+							a.link.button(href="#") Подробнее
+						a.link(href="#") Открыть каталог
+				section.page-content__main
+					.mobile-hidden
+						section.breadcrumbs
+							ul
+								li
+									a(href="#") Главная
+								li
+									a(href="#") О компании
+								li
+									span Социальная ответственность
+						h1.page-title Социальная ответственность
+
+					.text-content
+						p BaltGaz Групп активно поддерживает тех, кто в нас нуждается. Особое внимание мы стараемся уделять ветеранам и детям, ведь им очень важны поддержка и внимание!» - Председатель Правления Мулкадар Расулович Валиев.
+						p Руководство компании проявляет внимание к условиям работы сотрудников BaltGaz Групп, а также заботится об их здоровье и досуге. С этой целью созданы две современные клиники здоровья и красоты BaltGaz, база отдыха Жемчужина в пос. Лосево Ленинградской области, а также загородный ресторан RUNO.RU.
+						p Наряду с благотворительными проектами BaltGaz Групп активно сотрудничает с Администрациями районов города и участвует в городских программах по замене и установке газового оборудования социально-незащищенных слоев граждан.
+					.news-filter.news-filter--margin
+						.news-filter__item
+							a.active(href="#") Все
+							a(href="#") Благотворительность
+							a(href="#") Программа “Долг”
+					.strip-elements
+						a.strip-elements__item(href="#" style="background-image: url('img/social-1.jpg');")
+							.text
+								.text__title Помощь Храму Александра Невского в г. Волосово Ленинградской области
+								.text__category Программа “Долг”
+						a.strip-elements__item(href="#" style="background-image: url('img/social-2.jpg');")
+							.text
+								.text__title BaltGaz выступил партнером городского Народного праздника «Троица»
+								.text__category Благотворительность
+						a.strip-elements__item(href="#" style="background-image: url('img/social-3.jpg');")
+							.text
+								.text__title Председатель Правления BaltGaz Групп Мулкадар Валиев подарил ветеранам Великой Отечественной войны газовые плиты
+								.text__category Благотворительность
+						a.strip-elements__item(href="#" style="background-image: url('img/social-4.jpg');")
+							.text
+								.text__title Помощь Храму Александра Невского  в г. Волосово Ленинградской области
+								.text__category Программа “Долг”
+						a.strip-elements__item(href="#" style="background-image: url('img/social-5.jpg');")
+							.text
+								.text__title BaltGaz выступил партнером
+								.text__category Благотворительность
+						a.strip-elements__item(href="#" style="background-image: url('img/social-6.jpg');")
+							.text
+								.text__title Председатель Правления BaltGaz Групп Мулкадар Валиев
+								.text__category Благотворительность
+						a.strip-elements__item(href="#" style="background-image: url('img/social-1.jpg');")
+							.text
+								.text__title Помощь Храму Александра Невского в г. Волосово Ленинградской области
+								.text__category Программа “Долг”
+						a.strip-elements__item(href="#" style="background-image: url('img/social-2.jpg');")
+							.text
+								.text__title BaltGaz выступил партнером городского Народного праздника «Троица»
+								.text__category Благотворительность
+						a.strip-elements__item(href="#" style="background-image: url('img/social-3.jpg');")
+							.text
+								.text__title Председатель Правления BaltGaz Групп Мулкадар Валиев подарил ветеранам Великой Отечественной войны газовые плиты
+								.text__category Благотворительность
+						a.strip-elements__item(href="#" style="background-image: url('img/social-4.jpg');")
+							.text
+								.text__title Помощь Храму Александра Невского  в г. Волосово Ленинградской области
+								.text__category Программа “Долг”
+						a.strip-elements__item(href="#" style="background-image: url('img/social-5.jpg');")
+							.text
+								.text__title BaltGaz выступил партнером
+								.text__category Благотворительность
+						a.strip-elements__item(href="#" style="background-image: url('img/social-6.jpg');")
+							.text
+								.text__title Председатель Правления BaltGaz Групп Мулкадар Валиев
+								.text__category Благотворительность
+					.show-more
+						a.show-more__btn(href="#") Показать еще
+		include templates/footer.jade
+include templates/modal/index.jade
