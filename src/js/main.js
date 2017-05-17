@@ -1,9 +1,118 @@
-var map;
+var offices = [
+	{
+		lat: 55.72246971901109,
+		lng: 37.635040283203125,
+		type: 1,
+		name: 'BaltGaz - Ленгазаппарат1',
+		city: 'Санкт-Петербург',
+		address: 'ул. Варшавская д. 58',
+		phone: '+7 (812) 456-49-19',
+		mail: 'shop10@gbtorg.ru'
+	},
+	{
+		lat: 55.78275147606406,
+		lng: 37.720184326171875,
+		type: 1,
+		name: 'BaltGaz - Ленгазаппарат2',
+		city: 'Санкт-Петербург',
+		address: 'ул. Варшавская д. 58',
+		phone: '+7 (812) 456-49-19',
+		mail: 'shop10@gbtorg.ru'
+	},
+	{
+		lat: 55.85681658243853,
+		lng: 38.461761474609375,
+		type: 2,
+		name: 'BaltGaz - Ленгазаппарат3',
+		city: 'Санкт-Петербург',
+		address: 'ул. Варшавская д. 58',
+		phone: '+7 (812) 456-49-19',
+		mail: 'shop10@gbtorg.ru'
+	},
+	{
+		lat: 55.813629071199585,
+		lng: 38.972625732421875,
+		type: 1,
+		name: 'BaltGaz - Ленгазаппарат4',
+		city: 'Санкт-Петербург',
+		address: 'ул. Варшавская д. 58',
+		phone: '+7 (812) 456-49-19',
+		mail: 'shop10@gbtorg.ru'
+	},
+	{
+		lat: 56.145549500679074,
+		lng: 38.873748779296875,
+		type: 2,
+		name: 'BaltGaz - Ленгазаппарат5',
+		city: 'Санкт-Петербург',
+		address: 'ул. Варшавская д. 58',
+		phone: '+7 (812) 456-49-19',
+		mail: 'shop10@gbtorg.ru'
+	},
+	{
+		lat: 55.98455508140472,
+		lng: 37.258758544921875,
+		type: 1,
+		name: 'BaltGaz - Ленгазаппарат6',
+		city: 'Санкт-Петербург',
+		address: 'ул. Варшавская д. 58',
+		phone: '+7 (812) 456-49-19',
+		mail: 'shop10@gbtorg.ru'
+	},
+	{
+		lat: 55.660545462667464,
+		lng: 37.319183349609375,
+		type: 1,
+		name: 'BaltGaz - Ленгазаппарат7',
+		city: 'Санкт-Петербург',
+		address: 'ул. Варшавская д. 58',
+		phone: '+7 (812) 456-49-19',
+		mail: 'shop10@gbtorg.ru'
+	},
+	{
+		lat: 55.60162653582997,
+		lng: 38.431549072265625,
+		type: 2,
+		name: 'BaltGaz - Ленгазаппарат8',
+		city: 'Санкт-Петербург',
+		address: 'ул. Варшавская д. 58',
+		phone: '+7 (812) 456-49-19',
+		mail: 'shop10@gbtorg.ru'
+	},
+];
+
 function initMap() {
-	map = new google.maps.Map(document.getElementById('contacts-map'), {
-		center: {lat: -34.397, lng: 150.644},
-		zoom: 8
-	});
+	var mapContainer = $('#contacts-map');
+	if(!mapContainer.length) return;
+	
+	var map = new google.maps.Map(document.getElementById('contacts-map'), {
+			center: {lat: 37.36, lng: 55.45},
+			zoom: 8
+		}),
+		infowindow = new google.maps.InfoWindow();
+	offices.forEach(function(item, index) {
+		createMarker(item, map, infowindow);
+	});	
+}
+
+function createMarker(item, map, infowindow) {
+	var template = '<div class="map-info-window">' +
+						'<div class="title"><span>' + item.name + '</span><i class="icon icon__triangle--border-blue"></i></div>' +
+						'<div class="info">' +
+							'<p>' + item.city + '</br>' + item.address + '</p>' +
+							'<p>' + item.phone + '</br>' + item.mail + '</p>' +
+						'</div>' +
+					'</div>';
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(item.lat, item.lng),
+        map: map
+    });
+
+
+    google.maps.event.addListener(marker, 'click', function() {		
+    	infowindow.setContent(template);
+        infowindow.open(map, this);
+    });
 }
 
 $(document).ready(function () {
@@ -213,6 +322,35 @@ $(document).ready(function () {
 		}
 	});
 
+	$('.object-detail__gallery .image-preview').owlCarousel({
+		nav: true,
+		items: 4,
+		dots: false,
+		margin: 12,
+		mouseDrag: false, 
+		touchDrag: false,
+		responsive: {
+			0 : {
+				items: 2,
+			},
+			480 : {
+				items: 3,
+			},
+			768 : {
+				items: 4,
+			}
+		}
+	});
+
+	$('.object-detail__gallery .image-preview__item').on('click', function() {
+		var url = $(this).attr('data-url');
+
+		$('.object-detail__gallery .image-preview .owl-item').removeClass('current');
+		$(this).parents('.owl-item').addClass('current');
+
+		$('.object-detail__gallery .image-full img').attr('src', url);
+	});
+
 	function debounce(func, wait, immediate) {
 		var timeout;
 		return function() {
@@ -244,6 +382,26 @@ $(document).ready(function () {
 		}
 	});
 
+	var vacancyDropdown = $('.career-list__item-head');
+	vacancyDropdown.on('click', function(e) {
+		e.preventDefault();
+
+		var modalBtnClick = $(e.target).attr('data-fancybox');
+		
+		if(modalBtnClick !== undefined) return;
+
+		var item = $(this).parents('.career-list__item'),
+			text = $(this).find('.panel__toggle span');
+
+		item.toggleClass('active');
+
+		if(item.hasClass('active')) {
+			text.text('Свернуть');
+		} else {
+			text.text('Подробнее');
+		}
+	});
+
 	// Toggle buttons
 	$('.js-toggle').on('click', function(e) {
 		e.preventDefault();
@@ -256,11 +414,42 @@ $(document).ready(function () {
 	// Custom input file
 	var inputFile = $('.input-file');
 	inputFile.find('input[type="file"]').on('change', function(e) {
-			console.log(e);
-		var value = e.target.files[0].name,
-			resultBlock = $(this).siblings('.input-file__result');
-		resultBlock.text(value);
+		var file = e.target.files[0],
+			resultBlock = $(this).siblings('.input-file__result'),
+			btn = $(this).siblings('.input-file__btn'),
+			parent = $(this).parent('.input-file');
+			_this = this;
+
+		if (file != undefined) {
+			var value = file.name;
+			
+			resultBlock.text(value);
+			btn.text('Удалить');
+			btn.attr('data-action', 'remove');
+			parent.addClass('file-changed');
+		} else {
+			resultBlock.empty();
+			btn.text('Прикрепить файл');
+			parent.removeClass('file-changed');
+		}
+		
+		btn.on('click', function(e) {
+			e.preventDefault();
+
+			var actionType = $(this).attr('data-action');
+
+			if(actionType == 'remove') {
+				console.log(file);
+				resultBlock.empty();
+				file = null;
+				console.log(file);
+				btn.text('Прикрепить файл');
+				$(this).removeAttr('data-action');
+			}
+		});
 	});
+
+
 
 	// Massonry
 	$(window).load(function(){

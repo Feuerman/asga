@@ -1,0 +1,284 @@
+include templates/head.jade
+body
+	.page-wrapper
+		include templates/header.jade
+		section.page-content
+			.mobile-show
+				.section.breadcrumbs
+					ul
+						li
+							a(href="#") Главная
+							a(href="#") О компании
+							span Карьера
+				.page-title
+					h1 Карьера
+			.container
+				aside.left-sidebar
+					.mobile-show
+						button.left-menu-btn.js-toggle(data-toggle="left-menu")
+							i.icon.icon__triangle--border-grey
+							span Меню
+					.left-menu
+						.left-menu__group
+							a.title(href="#") О компании
+							ul
+								li
+									a(href="#") Цели и задачи
+								li
+									a(href="#") История компании
+								li
+									a(href="#") Завод
+								li
+									a(href="#") Сертификаты
+								li
+									a(href="#") Карьера
+								li
+									a(href="#") Партнеры и клиенты
+								li
+									a(href="#") Наши работы
+						.left-menu__group
+							a.title.active(href="#") Корпоративным клиентам
+						.left-menu__group
+							a.title(href="#") Социальная ответственность
+						.left-menu__group
+							a.title(href="#") Пресс-центр
+							ul
+								li
+									a(href="#") Новости
+								li
+									a(href="#") Видеоархив
+								li
+									a(href="#") Вопрос-ответ
+					.search-form
+						form
+							input(type="text" placeholder="Найти")
+							button(type="submit")
+								img.svg.svg--search(src="img/search.svg", alt="")
+					.left-sidebar__product
+						.products-slider__item
+							.image
+								img(src="img/product -1.jpg", alt="")
+							.desc
+								.desc__name Газовая колонка NEVA-4511
+								.price
+									span.price__old 9500
+									span 9220 руб.
+							a.link.button(href="#") Подробнее
+						a.link(href="#") Открыть каталог
+				section.page-content__main
+					.mobile-hidden
+						.section.breadcrumbs
+							ul
+								li
+									a(href="#") Главная
+									a(href="#") О компании
+									span Карьера
+						.page-title
+							h1 Карьера
+					section.career-list
+						.career-list__item
+							.resume
+								button(data-fancybox data-src="#modal-resume") Отправить резюме
+								p Если Вы не нашли для себя подходящей вакансии, отправьте нам пожалуйста, свое резюме и мы с Вами свяжемся
+						.career-list__item
+							.career-list__item-head
+								.name Слесарь ВДГО
+								div
+									span.label Заработная плата:
+									span.value от 30 000 рублей
+								.panel
+									button.panel__toggle
+										i.icon.icon__folder
+										span Подробнее
+									button.panel__modal(data-fancybox data-src="#modal-vacancy") Откликнуться
+							.career-list__item-content
+								.group
+									p
+										span.label График работы:
+										span.value «пятидневка», с 8:30 до 17:30, сб., вс. — выходные
+									p
+										span.label Адрес работы:
+										span.value ст. м. Пл. А. Невского I, II, ул. проф. Качалова, 3
+								.group
+									.group__title Обязанности
+									p Техническое обслуживание внутридомового газового оборудования, аварийное и заявочное обслуживание
+								.group
+									.group__title Требования
+									p
+										span.label Образование:
+										span.value Техническое образование
+									p
+										span.label Опыт работы:
+										span.value От 3 лет на аналогичной позиции
+									p
+										span.label Дополнительно:
+										span.value Обязательно наличие удостоверения по работе с газовыми объектами
+						.career-list__item
+							.career-list__item-head
+								.name Слесарь ВДГО
+								div
+									span.label Заработная плата:
+									span.value от 30 000 рублей
+								.panel
+									button.panel__toggle
+										i.icon.icon__folder
+										span Подробнее
+									button.panel__modal(data-fancybox data-src="#modal-vacancy") Откликнуться
+							.career-list__item-content
+								.group
+									p
+										span.label График работы:
+										span.value «пятидневка», с 8:30 до 17:30, сб., вс. — выходные
+									p
+										span.label Адрес работы:
+										span.value ст. м. Пл. А. Невского I, II, ул. проф. Качалова, 3
+								.group
+									.group__title Обязанности
+									p Техническое обслуживание внутридомового газового оборудования, аварийное и заявочное обслуживание
+								.group
+									.group__title Требования
+									p
+										span.label Образование:
+										span.value Техническое образование
+									p
+										span.label Опыт работы:
+										span.value От 3 лет на аналогичной позиции
+									p
+										span.label Дополнительно:
+										span.value Обязательно наличие удостоверения по работе с газовыми объектами
+						.career-list__item
+							.career-list__item-head
+								.name Слесарь ВДГО
+								div
+									span.label Заработная плата:
+									span.value от 30 000 рублей
+								.panel
+									button.panel__toggle
+										i.icon.icon__folder
+										span Подробнее
+									button.panel__modal(data-fancybox data-src="#modal-vacancy") Откликнуться
+							.career-list__item-content
+								.group
+									p
+										span.label График работы:
+										span.value «пятидневка», с 8:30 до 17:30, сб., вс. — выходные
+									p
+										span.label Адрес работы:
+										span.value ст. м. Пл. А. Невского I, II, ул. проф. Качалова, 3
+								.group
+									.group__title Обязанности
+									p Техническое обслуживание внутридомового газового оборудования, аварийное и заявочное обслуживание
+								.group
+									.group__title Требования
+									p
+										span.label Образование:
+										span.value Техническое образование
+									p
+										span.label Опыт работы:
+										span.value От 3 лет на аналогичной позиции
+									p
+										span.label Дополнительно:
+										span.value Обязательно наличие удостоверения по работе с газовыми объектами
+						.career-list__item
+							.career-list__item-head
+								.name Слесарь ВДГО
+								div
+									span.label Заработная плата:
+									span.value от 30 000 рублей
+								.panel
+									button.panel__toggle
+										i.icon.icon__folder
+										span Подробнее
+									button.panel__modal(data-fancybox data-src="#modal-vacancy") Откликнуться
+							.career-list__item-content
+								.group
+									p
+										span.label График работы:
+										span.value «пятидневка», с 8:30 до 17:30, сб., вс. — выходные
+									p
+										span.label Адрес работы:
+										span.value ст. м. Пл. А. Невского I, II, ул. проф. Качалова, 3
+								.group
+									.group__title Обязанности
+									p Техническое обслуживание внутридомового газового оборудования, аварийное и заявочное обслуживание
+								.group
+									.group__title Требования
+									p
+										span.label Образование:
+										span.value Техническое образование
+									p
+										span.label Опыт работы:
+										span.value От 3 лет на аналогичной позиции
+									p
+										span.label Дополнительно:
+										span.value Обязательно наличие удостоверения по работе с газовыми объектами
+						.career-list__item
+							.career-list__item-head
+								.name Слесарь ВДГО
+								div
+									span.label Заработная плата:
+									span.value от 30 000 рублей
+								.panel
+									button.panel__toggle
+										i.icon.icon__folder
+										span Подробнее
+									button.panel__modal(data-fancybox data-src="#modal-vacancy") Откликнуться
+							.career-list__item-content
+								.group
+									p
+										span.label График работы:
+										span.value «пятидневка», с 8:30 до 17:30, сб., вс. — выходные
+									p
+										span.label Адрес работы:
+										span.value ст. м. Пл. А. Невского I, II, ул. проф. Качалова, 3
+								.group
+									.group__title Обязанности
+									p Техническое обслуживание внутридомового газового оборудования, аварийное и заявочное обслуживание
+								.group
+									.group__title Требования
+									p
+										span.label Образование:
+										span.value Техническое образование
+									p
+										span.label Опыт работы:
+										span.value От 3 лет на аналогичной позиции
+									p
+										span.label Дополнительно:
+										span.value Обязательно наличие удостоверения по работе с газовыми объектами
+						.career-list__item
+							.career-list__item-head
+								.name Слесарь ВДГО
+								div
+									span.label Заработная плата:
+									span.value от 30 000 рублей
+								.panel
+									button.panel__toggle
+										i.icon.icon__folder
+										span Подробнее
+									button.panel__modal(data-fancybox data-src="#modal-vacancy") Откликнуться
+							.career-list__item-content
+								.group
+									p
+										span.label График работы:
+										span.value «пятидневка», с 8:30 до 17:30, сб., вс. — выходные
+									p
+										span.label Адрес работы:
+										span.value ст. м. Пл. А. Невского I, II, ул. проф. Качалова, 3
+								.group
+									.group__title Обязанности
+									p Техническое обслуживание внутридомового газового оборудования, аварийное и заявочное обслуживание
+								.group
+									.group__title Требования
+									p
+										span.label Образование:
+										span.value Техническое образование
+									p
+										span.label Опыт работы:
+										span.value От 3 лет на аналогичной позиции
+									p
+										span.label Дополнительно:
+										span.value Обязательно наличие удостоверения по работе с газовыми объектами
+					.show-more
+						a.show-more__btn(href="#") Показать еще
+		include templates/footer.jade
+include templates/modal/index.jade

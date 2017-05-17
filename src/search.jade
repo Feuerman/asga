@@ -1,0 +1,157 @@
+include templates/head.jade
+body
+	.page-wrapper
+		include templates/header.jade
+		section.page-content
+			.container
+				.search-page
+					form.search-page__form
+						input.input-text(type="text" placeholder="Что искать?")
+						select.input-select(type="text" data-placeholder="Где искать?")
+							option(value="")
+							option(value="1") 1
+							option(value="2") 2
+							option(value="3") 3
+						button(type="submit")
+							img.svg(src="img/search.svg", alt="")
+							span Найти
+					.section.breadcrumbs
+						ul
+							li
+								a(href="#") Главная
+							li
+								span Поиск
+						.page-title
+							h1 Результаты поиска
+							.search-count 1 - 20 из 80
+					.pagination
+						ul
+							li
+								a.active(href="#") 1
+							li
+								a(href="#") 2
+							li
+								a(href="#") 3
+							li
+								a(href="#") 4
+							li
+								a(href="#") 5
+							li
+								a(href="#") ...
+							li
+								a(href="#") 19
+					.search-result
+						.search-result__item
+							img.svg(src="img/search.svg", alt="")
+							a.title(href="#") Выставка Aquatherm 2017
+							.text
+								p BaltGaz совместно с компанией Honeywell выставке Aquatherm 2017 представил котел нового поколения BaltGaz Turbo. Котёл разработан в инженерно-техническом центре BaltGaz и оснащен современной системой управления от компании Honeywell.
+							.category
+								a(href="#") Пресс-центр
+								a(href="#") Новости
+						.search-result__item
+							img.svg(src="img/search.svg", alt="")
+							a.title(href="#") Новые модели проточных газовых водонагревателей NEVA
+							.text
+								p В декабре 2016 года BaltGaz Групп расширяет линейку газовых проточных водонагревателей NEVA. Выпущены новые модели газовых проточных водонагревателей NEVA 4508 и NEVA 4510, NEVA 9 и NEVA 11. Данные модели разработаны в инженерно-техническом центре BaltGaz Групп.
+							.category
+								a(href="#") Пресс-центр
+								a(href="#") Новости
+						.search-result__item
+							img.svg(src="img/search.svg", alt="")
+							a.title(href="#") Замена котла в газовой отопительной котельной Ленинградской области
+							.text
+								p Заказчиком данных работ выступила Администрация Агалатовского селького поселения. Котельная предназначена для отопления жилого массива и школы в поселке Вартемяги.
+							.category
+								a(href="#") Пресс-центр
+								a(href="#") Новости
+						.search-result__item
+							img.svg(src="img/search.svg", alt="")
+							a.title(href="#") Замена котла в газовой отопительной котельной Ленинградской области
+							.text
+								p Заказчиком данных работ выступила Администрация Агалатовского селького поселения. Котельная предназначена для отопления жилого массива и школы в поселке Вартемяги.
+							.category
+								a(href="#") Пресс-центр
+								a(href="#") Новости
+						.search-result__item
+							img.svg(src="img/search.svg", alt="")
+							a.title(href="#") Выставка Aquatherm 2017
+							.text
+								p BaltGaz совместно с компанией Honeywell выставке Aquatherm 2017 представил котел нового поколения BaltGaz Turbo. Котёл разработан в инженерно-техническом центре BaltGaz и оснащен современной системой управления от компании Honeywell.
+							.category
+								a(href="#") Пресс-центр
+								a(href="#") Новости
+						.search-result__item
+							img.svg(src="img/search.svg", alt="")
+							a.title(href="#") Новые модели проточных газовых водонагревателей NEVA
+							.text
+								p В декабре 2016 года BaltGaz Групп расширяет линейку газовых проточных водонагревателей NEVA. Выпущены новые модели газовых проточных водонагревателей NEVA 4508 и NEVA 4510, NEVA 9 и NEVA 11. Данные модели разработаны в инженерно-техническом центре BaltGaz Групп.
+							.category
+								a(href="#") Пресс-центр
+								a(href="#") Новости
+						.search-result__item
+							img.svg(src="img/search.svg", alt="")
+							a.title(href="#") Замена котла в газовой отопительной котельной Ленинградской области
+							.text
+								p Заказчиком данных работ выступила Администрация Агалатовского селького поселения. Котельная предназначена для отопления жилого массива и школы в поселке Вартемяги.
+							.category
+								a(href="#") Пресс-центр
+								a(href="#") Новости
+						.search-result__item
+							img.svg(src="img/search.svg", alt="")
+							a.title(href="#") Замена котла в газовой отопительной котельной Ленинградской области
+							.text
+								p Заказчиком данных работ выступила Администрация Агалатовского селького поселения. Котельная предназначена для отопления жилого массива и школы в поселке Вартемяги.
+							.category
+								a(href="#") Пресс-центр
+								a(href="#") Новости
+						.search-result__item
+							img.svg(src="img/search.svg", alt="")
+							a.title(href="#") Выставка Aquatherm 2017
+							.text
+								p BaltGaz совместно с компанией Honeywell выставке Aquatherm 2017 представил котел нового поколения BaltGaz Turbo. Котёл разработан в инженерно-техническом центре BaltGaz и оснащен современной системой управления от компании Honeywell.
+							.category
+								a(href="#") Пресс-центр
+								a(href="#") Новости
+						.search-result__item
+							img.svg(src="img/search.svg", alt="")
+							a.title(href="#") Новые модели проточных газовых водонагревателей NEVA
+							.text
+								p В декабре 2016 года BaltGaz Групп расширяет линейку газовых проточных водонагревателей NEVA. Выпущены новые модели газовых проточных водонагревателей NEVA 4508 и NEVA 4510, NEVA 9 и NEVA 11. Данные модели разработаны в инженерно-техническом центре BaltGaz Групп.
+							.category
+								a(href="#") Пресс-центр
+								a(href="#") Новости
+						.search-result__item
+							img.svg(src="img/search.svg", alt="")
+							a.title(href="#") Замена котла в газовой отопительной котельной Ленинградской области
+							.text
+								p Заказчиком данных работ выступила Администрация Агалатовского селького поселения. Котельная предназначена для отопления жилого массива и школы в поселке Вартемяги.
+							.category
+								a(href="#") Пресс-центр
+								a(href="#") Новости
+						.search-result__item
+							img.svg(src="img/search.svg", alt="")
+							a.title(href="#") Замена котла в газовой отопительной котельной Ленинградской области
+							.text
+								p Заказчиком данных работ выступила Администрация Агалатовского селького поселения. Котельная предназначена для отопления жилого массива и школы в поселке Вартемяги.
+							.category
+								a(href="#") Пресс-центр
+								a(href="#") Новости
+					.pagination
+						ul
+							li
+								a.active(href="#") 1
+							li
+								a(href="#") 2
+							li
+								a(href="#") 3
+							li
+								a(href="#") 4
+							li
+								a(href="#") 5
+							li
+								a(href="#") ...
+							li
+								a(href="#") 19
+		include templates/footer.jade
+include templates/modal/index.jade

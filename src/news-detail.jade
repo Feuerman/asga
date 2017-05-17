@@ -1,0 +1,121 @@
+include templates/head.jade
+body
+	.page-wrapper
+		include templates/header.jade
+		section.page-content
+			.mobile-show
+				.section.breadcrumbs
+					ul
+						li
+							a(href="#") Главная
+						li
+							a(href="#") О компании
+						li
+							a(href="#") Пресс-центр
+						li
+							a(href="#") Новости
+						li
+							span Выставка Aquatherm 2017
+				.page-title
+					h1 Выставка Aquatherm 2017
+					.date 27 февраля 2017г.
+			.container
+				aside.left-sidebar
+					.mobile-show
+						button.left-menu-btn.js-toggle(data-toggle="left-menu")
+							i.icon.icon__triangle--border-grey
+							span Меню
+					.left-menu
+						.left-menu__group
+							a.title(href="#") О компании
+							ul
+								li
+									a(href="#") Цели и задачи
+								li
+									a(href="#") История компании
+								li
+									a(href="#") Завод
+								li
+									a(href="#") Сертификаты
+								li
+									a(href="#") Карьера
+								li
+									a(href="#") Партнеры и клиенты
+								li
+									a(href="#") Наши работы
+						.left-menu__group
+							a.title.active(href="#") Корпоративным клиентам
+						.left-menu__group
+							a.title(href="#") Социальная ответственность
+						.left-menu__group
+							a.title(href="#") Пресс-центр
+							ul
+								li
+									a(href="#") Новости
+								li
+									a(href="#") Видеоархив
+								li
+									a(href="#") Вопрос-ответ
+					.search-form
+						form
+							input(type="text" placeholder="Найти")
+							button(type="submit")
+								img.svg.svg--search(src="img/search.svg", alt="")
+					.left-sidebar__product
+						.products-slider__item
+							.image
+								img(src="img/product -1.jpg", alt="")
+							.desc
+								.desc__name Газовая колонка NEVA-4511
+								.price
+									span.price__old 9500
+									span 9220 руб.
+							a.link.button(href="#") Подробнее
+						a.link(href="#") Открыть каталог
+				section.page-content__main
+					.mobile-hidden
+						.section.breadcrumbs
+							ul
+								li
+									a(href="#") Главная
+								li
+									a(href="#") О компании
+								li
+									a(href="#") Пресс-центр
+								li
+									a(href="#") Новости
+								li
+									span Выставка Aquatherm 2017
+						.page-title
+							h1 Выставка Aquatherm 2017
+							.date 27 февраля 2017г.
+					.news-detail
+						.news-detail__image
+							img(src="img/news-detail-1.jpg", alt="")
+						p.title BaltGaz совместно с компанией Honeywell, представил на выставке Aquatherm 2017 котел нового поколения BaltGaz Turbo.
+						p Продукт разработан в инженерно-техническом центре АО «Армавирский завод газовой аппаратуры» и оснащены современной системой управления от компании Honeywell.  BaltGaz Turbo прошли многоступенчатый контроль качества и соответствуют всем российским стандартам качества: просты в эксплуатации, обслуживании и максимально доступны для потребителя.
+						.news-detail__image
+							img(src="img/news-detail-2.jpg", alt="")
+						p Котлы серии BaltGaz представляют собой широкий модельный ряд одноконтурных и двухконтурных настенных газовых котлов комфорт класса с раздельными теплообменниками. Котлы будут представлены моделями как с закрытой камерой сгорания (Turbo) с принудительным отводом продуктов сгорания, так и с открытой (Atmo) - с естественным отводом продуктов сгорания. Теплопроизводительность настенных котлов серии BaltGaz составит от 11 до 32 кВт. 
+						p Совместно с мировым производителем электронных систем управления и автоматизации корпорацией Honeywell была разработана система управления AURORA, состоящая из газового клапана с сервоприводом и электронной платой специально адаптированная для российских условий эксплуатации. 
+						p Применение системы из двух теплообменников в котлах BaltGaz делает его боле комфортным для потребителя и значительно снижает стоимость сервисного обслуживания. Медный теплообменник предназначен для контура отопления, стальной пластинчатый - для контура горячего водоснабжения. 
+						p Благодаря простому доступу ко всем комплектующим, наличию съемных боковых панелей, минимальному количеству винтов и откидной панели управления котел удобно устанавливать, запускать и проводить сервисное обслуживание. Котел выполнен в современном и эргономичном дизайне, компактный и малогабаритный. 
+						.news-detail__advantages
+							.image
+								img(src="img/news-detail-3.jpg", alt="")
+							.desc
+								.desc__title Основные преимущества нового котла
+								ul
+									li Удобство технического обслуживания;
+									li Расширенные возможности настройки параметров работы котла: наличие пользовательского и сервисного режимов;
+									li Пониженный уровень шума благодаря использованию теплошумоизоляции на внутренних поверхностях корпуса;
+									li Наличие всех необходимых систем безопасности;
+									li Возможность использования в качестве теплоносителя антифриза на основе пропиленгликоля.
+					.page-menu
+						ul
+							li
+								a(href="#") Проекты
+							li
+								a(href="#") Услуги
+		include templates/footer.jade
+include templates/modal/index.jade

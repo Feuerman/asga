@@ -1,0 +1,137 @@
+include templates/head.jade
+body
+	.page-wrapper
+		include templates/header.jade
+		section.page-content
+			.mobile-show
+				.section.breadcrumbs
+					ul
+						li
+							a(href="#") Главная
+						li
+							a(href="#") О компании
+						li
+							a(href="#") Пресс-центр
+						li
+							a(href="#") Наши работы
+						li
+							span Строительство котельной в Красном Бору
+				.page-title
+					h1 Строительство котельной в Красном Бору
+			.container
+				aside.left-sidebar
+					.mobile-show
+						button.left-menu-btn.js-toggle(data-toggle="left-menu")
+							i.icon.icon__triangle--border-grey
+							span Меню
+					.left-menu
+						.left-menu__group
+							a.title(href="#") О компании
+							ul
+								li
+									a(href="#") Цели и задачи
+								li
+									a(href="#") История компании
+								li
+									a(href="#") Завод
+								li
+									a(href="#") Сертификаты
+								li
+									a(href="#") Карьера
+								li
+									a(href="#") Партнеры и клиенты
+								li.active
+									a(href="#") Наши работы
+						.left-menu__group
+							a.title(href="#") Корпоративным клиентам
+						.left-menu__group
+							a.title(href="#") Социальная ответственность
+						.left-menu__group
+							a.title(href="#") Пресс-центр
+							ul
+								li
+									a(href="#") Новости
+								li
+									a(href="#") Видеоархив
+								li
+									a(href="#") Вопрос-ответ
+					.search-form
+						form
+							input(type="text" placeholder="Найти")
+							button(type="submit")
+								img.svg.svg--search(src="img/search.svg", alt="")
+					.left-sidebar__product
+						.products-slider__item
+							.image
+								img(src="img/product -1.jpg", alt="")
+							.desc
+								.desc__name Газовая колонка NEVA-4511
+								.price
+									span.price__old 9500
+									span 9220 руб.
+							a.link.button(href="#") Подробнее
+						a.link(href="#") Открыть каталог
+				section.page-content__main
+					.mobile-hidden
+						.section.breadcrumbs
+							ul
+								li
+									a(href="#") Главная
+								li
+									a(href="#") О компании
+								li
+									a(href="#") Пресс-центр
+								li
+									a(href="#") Наши работы
+								li
+									span Строительство котельной в Красном Бору
+						.page-title
+							h1 Строительство котельной в Красном Бору
+					.object-detail
+						.object-detail__header
+							.col
+								.col__title Клиент
+								.client-info
+									img.client-info__logo(src="img/client-logo.jpg", alt="")
+									.client-info__desc
+										.name ООО "СТАН"
+										p Специалистами BaltGaz-ТеплоГазМонтаж были осуществлены работы по строительству пристроенной котельной
+							.col
+								.col__title Отзыв
+								.review
+									a(data-fancybox="images" href="img/review.jpg")
+										img(src="img/review.jpg", alt="")
+						.object-detail__desc
+							.title.title--grey Процесс работы
+							p Специалистами BaltGaz-ТеплоГазМонтаж были осуществлены работы по строительству пристроенной автономной автоматизированной водогрейной котельной с возможностью дальнейшей газификации.  Котельная расположена по адресу: Красный Бор, ул. Полевая, д. 5, Тосненский район, Ленинградская область.
+							.title В том числе были выполнены следующие работы:
+							ul
+								li Проектирование котельной мощностью 0,8 МВт;
+								li Согласование проекта;
+								li Поставка и монтаж оборудования котельной;
+								li Пуско-наладочные работы и сдача объекта в эксплуатацию.
+							p Планируется перевод на газ в третьем квартале 2014 года.
+						.object-detail__gallery
+							.image-full
+								img(src="img/object-detail-1.jpg", alt="")
+							.image-preview.owl-carousel
+								.image-preview__item(data-url="img/object-detail-1.jpg")
+									img(src="img/object-detail-small-1.jpg", alt="")
+								.image-preview__item(data-url="img/object-detail-small-2.jpg")
+									img(src="img/object-detail-small-2.jpg", alt="")
+								.image-preview__item(data-url="img/object-detail-small-3.jpg")
+									img(src="img/object-detail-small-3.jpg", alt="")
+								.image-preview__item(data-url="img/object-detail-small-4.jpg")
+									img(src="img/object-detail-small-4.jpg", alt="")
+								.image-preview__item(data-url="img/object-detail-1.jpg")
+									img(src="img/object-detail-small-1.jpg", alt="")
+								.image-preview__item(data-url="img/object-detail-small-2.jpg")
+									img(src="img/object-detail-small-2.jpg", alt="")
+								.image-preview__item(data-url="img/object-detail-small-3.jpg")
+									img(src="img/object-detail-small-3.jpg", alt="")
+								.image-preview__item(data-url="img/object-detail-small-4.jpg")
+									img(src="img/object-detail-small-4.jpg", alt="")
+						.object-detail__footer
+							button(data-fancybox data-src="#modal-service") Заказать услугу
+		include templates/footer.jade
+include templates/modal/index.jade
